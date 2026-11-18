@@ -19,7 +19,7 @@ const groups = [
 
 export default function Skills() {
   return (
-    <section className="sec">
+    <section className="sec" id="skills">
       <div className="sec-in">
         <div className="sec-label fi">What I Know</div>
         <h2 className="sec-title fi fi-2">Technical Skills</h2>

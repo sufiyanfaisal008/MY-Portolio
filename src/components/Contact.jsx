@@ -61,7 +61,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="sec contact-bg">
+    <section className="sec contact-bg" id="contact">
       <div className="sec-in">
         <div className="sec-label fi">Get In Touch</div>
         <h2 className="sec-title fi fi-2">Let's Connect</h2>

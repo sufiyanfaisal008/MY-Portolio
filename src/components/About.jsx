@@ -7,7 +7,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section className="sec about-bg">
+    <section className="sec about-bg" id="about">
       <div className="sec-in">
         <div className="sec-label fi">Who I Am</div>
         <h2 className="sec-title fi fi-2">About Me</h2>

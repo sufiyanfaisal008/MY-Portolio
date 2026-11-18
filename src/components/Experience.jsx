@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <section className="sec exp-bg">
+    <section className="sec exp-bg" id="experience">
       <div className="sec-in">
         <div className="sec-label fi">Work History</div>
         <h2 className="sec-title fi fi-2">Experience</h2>

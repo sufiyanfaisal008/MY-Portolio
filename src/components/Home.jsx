@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
 import photo from '../assets/photo.jpg'
 
 const roles = [
@@ -40,11 +39,11 @@ function useTyping(words) {
 }
 
 export default function Home() {
-  const navigate = useNavigate()
   const typed = useTyping(roles)
+  const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-bg" />
       <div className="grid-bg" />
       <div className="hero-inner">
@@ -63,12 +62,8 @@ export default function Home() {
             production-level apps and AI-powered systems.
           </p>
           <div className="hero-actions fi fi-5">
-            <button className="btn-p" onClick={() => navigate('/projects')}>
-              View Projects →
-            </button>
-            <button className="btn-s" onClick={() => navigate('/contact')}>
-              Get in Touch
-            </button>
+            <button className="btn-p" onClick={() => scrollTo('projects')}>View Projects →</button>
+            <button className="btn-s" onClick={() => scrollTo('contact')}>Get in Touch</button>
           </div>
         </div>
 
@@ -85,8 +80,8 @@ export default function Home() {
               <div className="photo-code">
                 <span style={{ color: '#7c3aed' }}>const</span>{' '}
                 <span style={{ color: '#00d4ff' }}>dev</span> = {'{'}<br />
-                &nbsp;&nbsp;name: <span style={{ color: '#06d6a0' }}>"Sufiyan"</span>,<br />
-                &nbsp;&nbsp;stack: <span style={{ color: '#06d6a0' }}>"Full-Stack"</span><br />
+                &nbsp;&nbsp;name: <span style={{ color: '#06d6a0' }}>&quot;Sufiyan&quot;</span>,<br />
+                &nbsp;&nbsp;stack: <span style={{ color: '#06d6a0' }}>&quot;Full-Stack&quot;</span><br />
                 {'}'}
               </div>
             </div>

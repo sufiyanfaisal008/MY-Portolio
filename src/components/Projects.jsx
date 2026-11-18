@@ -45,7 +45,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="sec">
+    <section className="sec" id="projects">
       <div className="sec-in">
         <div className="sec-label fi">What I've Built</div>
         <h2 className="sec-title fi fi-2">Projects</h2>
