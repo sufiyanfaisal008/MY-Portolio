@@ -7,6 +7,8 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import MotionEffects from './components/MotionEffects'
+import './styles/motion.css'
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
@@ -20,6 +22,7 @@ export default function App() {
 
   return (
     <>
+      <MotionEffects />
       <Navbar theme={theme} setTheme={setTheme} />
       <main className="page-wrap">
         <Home />
